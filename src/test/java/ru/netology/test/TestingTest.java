@@ -6,8 +6,7 @@ import ru.netology.data.DataGenerator;
 import ru.netology.data.Registration;
 
 
-import static com.codeborne.selenide.Condition.exactText;
-import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 

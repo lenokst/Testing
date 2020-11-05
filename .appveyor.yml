@@ -9,7 +9,7 @@ build: off  # будем использовать свой скрипт сбор
 
 install:
   # запускаем SUT (запоминаем информацию о процессе в переменной $App)
-  - ps: $App = Start-Process -FilePath java -ArgumentList "-jar ./artifacts/app-ibank.jar" -PassThru
+  - ps: java -jar ./artifacts/app-ibank.jar -P:profile=test&
   - ps: chmod +x gradlew
 
 

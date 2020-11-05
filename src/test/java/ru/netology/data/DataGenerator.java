@@ -5,11 +5,13 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
+import lombok.Data;
 
 import java.util.Locale;
 
 import static io.restassured.RestAssured.given;
 
+@Data
 public class DataGenerator {
     private static RequestSpecification requestSpecification = new RequestSpecBuilder()
             .setBaseUri("http://localhost")
